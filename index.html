@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Habilidades</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h3>Agregar habilidades</h3>
+
+        <form method="POST" action="" class="formulario">
+            
+            <div class="c-row">
+
+                <div class="g-input">
+                    <label for="habilidad">Habilidad</label>
+                    <input type="text" name="habilidad" autocomplete="off">
+                </div>
+
+                <div class="g-input">
+                    <label for="nivel">Nivel(%)</label>
+                    <input type="text" name="nivel" autocomplete="off">
+                </div>
+
+                <div class="g-input">
+                    <label for="color">Color</label>
+                    <input type="color" name="color">
+                </div>
+
+            </div>
+
+            <button type="button" class="btnAdd"><i class="fas fa-plus"></i>AGREGAR HABILIDAD</button>
+
+        </form>
+
+
+        <h3>Mis habilidades</h3>
+
+        <div class="h-content">
+            <!-- EJEMPLO DE BARRA -->
+            <!-- <div class="h-iten">
+                <p>Web Developers</p>
+                <div class="barra-full">
+                    <div class="c-barra" style="width: 80%; background: #000000" ><span>80%</span></div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>

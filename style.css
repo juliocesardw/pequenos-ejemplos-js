@@ -1,0 +1,133 @@
+:root{
+    --color-verde:#34A853;
+    --color-borde: #E5E5E5;
+    --color-negro: #222222;
+    --color-texto: #36362D;
+    --color-barra: #EDEBEB;
+}
+
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: #f2f4f8;
+}
+
+.contenedor{
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+h3{
+    color: var(--color-negro);
+    margin-bottom: 20px;
+}
+
+.formulario .c-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .g-input{
+    display: flex;
+    flex-direction: column;
+
+    width: calc((100% - 20px) / 3);
+    margin-bottom: 20px;
+
+}
+
+.formulario .g-input label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--color-texto);
+    display: inline-block;
+}
+
+.formulario .g-input input{
+    width: 100%;
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
+    border-radius: 3px;
+    outline: 0;
+}
+
+.formulario .g-input input[type="text"]{
+    padding: 10px 12px;
+}
+
+.formulario .g-input input[type="color"]{
+    height: 37px;
+}
+
+.formulario .btnAdd{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background: var(--color-verde);
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formulario .btnAdd i{
+    margin-right: 10px;
+}
+
+.h-iten{
+    margin-bottom: 20px;
+}
+
+.h-iten p{
+    color: var(--color-texto);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.h-iten .barra-full{
+    width: 100%;
+    background: var(--color-barra);
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.h-iten .barra-full .c-barra{
+    position: absolute;
+    height: 100%;
+    background: var(--color-verde);
+    border-radius: 5px;
+}
+
+.h-iten .barra-full .c-barra span{
+    background: var(--color-negro);
+    display: inline-block;
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    padding: 3px;
+    margin-top: -35px;
+    position: relative;
+}
+
+.h-iten .barra-full .c-barra span::before{
+    content: '';
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid var(--color-negro);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
